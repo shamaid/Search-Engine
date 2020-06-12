@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="520.0" maxWidth="740.0" minHeight="520.0" minWidth="740.0" prefHeight="520.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View">
+    <children>
+        <AnchorPane maxHeight="520.0" maxWidth="740.0" minHeight="520.0" minWidth="740.0" prefHeight="520.0" prefWidth="740.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button fx:id="button_Reset" layoutX="30.0" layoutY="468.0" mnemonicParsing="false" onAction="#resetPostingFilesAndDictionary" text="Reset" />
+                <CheckBox fx:id="checkBox_stemming" layoutX="694.0" layoutY="382.0" mnemonicParsing="false" />
+                <TextField fx:id="txtField_corpusAndStopWords" layoutX="417.0" layoutY="33.0" prefHeight="25.0" prefWidth="184.0" />
+                <Label layoutX="57.0" layoutY="32.0" text="corpus and stop words path">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="57.0" layoutY="71.0" text="where to save posting files and dictionary">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_BrowseCorpusAndStopWords" disable="false" layoutX="631.0" layoutY="33.0" mnemonicParsing="false" onAction="#chooseDirectoryForCorpusAndStopWords" text="browse" />
+                <TextField fx:id="txtField_postingFilesAndDictionary" layoutX="417.0" layoutY="72.0" prefHeight="25.0" prefWidth="184.0" />
+                <Button fx:id="button_BrowsePostingFilesAndDictionary" disable="false" layoutX="631.0" layoutY="72.0" mnemonicParsing="false" onAction="#chooseDirectoryForPostingFilesAndDictionary" text="browse" />
+                <Label layoutX="598.0" layoutY="377.0" prefHeight="27.0" prefWidth="87.0" text="stemming">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_ShowDictionary" layoutX="611.0" layoutY="433.0" mnemonicParsing="false" onAction="#showDictionary" text="Show Dictionary" />
+                <Button fx:id="button_LoadDictionary" disable="false" layoutX="613.0" layoutY="468.0" mnemonicParsing="false" onAction="#loadDictionary" text="Load dictionary" />
+                <Button fx:id="button_Start" disable="false" layoutX="642.0" layoutY="116.0" mnemonicParsing="false" onAction="#startTheProgram" text="Start" />
+                <TextField fx:id="txtField_searchQuery" layoutX="220.0" layoutY="163.0" prefHeight="25.0" prefWidth="288.0" />
+                <Label layoutX="155.0" layoutY="163.0" prefHeight="25.0" prefWidth="55.0" text="Search">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_Run" disable="true" layoutX="535.0" layoutY="163.0" mnemonicParsing="false" onAction="#runQuery" text="Run" />
+                <Label layoutX="75.0" layoutY="261.0" prefHeight="25.0" prefWidth="136.0" text="Choose queries file">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_queries" disable="true" layoutX="225.0" layoutY="261.0" mnemonicParsing="false" onAction="#filePathQuery" text="browse" />
+                <CheckBox fx:id="checkBox_semantic" layoutX="694.0" layoutY="350.0" mnemonicParsing="false" />
+                <Label layoutX="541.0" layoutY="346.0" prefHeight="25.0" prefWidth="144.0" text="Semantic treatment">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="160.0" layoutY="211.0" prefHeight="17.0" prefWidth="45.0" text="Save">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtField_saveQuery" layoutX="220.0" layoutY="211.0" prefHeight="25.0" prefWidth="288.0" />
+                <Button fx:id="button_browseSave" disable="true" layoutX="535.0" layoutY="211.0" mnemonicParsing="false" onAction="#saveQuery" text="browse" />
+                <Button fx:id="button_Go" disable="true" layoutX="297.0" layoutY="260.0" mnemonicParsing="false" onAction="#searchAndSaveQuery" prefHeight="27.0" prefWidth="55.0" text="Go" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

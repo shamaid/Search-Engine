@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="final:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/final_jar</output-path>
+    <root id="archive" name="final.jar">
+      <element id="module-output" name="final" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../w2vJAR/medallia-word2vec-0.10.2-jar-with-dependencies.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
